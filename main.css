@@ -1,0 +1,572 @@
+/*!*****************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.91.0/node_modules/css-loader/dist/cjs.js!./src/assets/icons/iconfont.css ***!
+  \*****************************************************************************************************************************************/
+@font-face {
+  font-family: "iconfont"; /* Project id 4507246 */
+  src: url(images/f77e43af815c8b9c5f09.woff2?t=1719682347469) format('woff2'),
+       url(images/96509f2630bf6d86a67d.woff?t=1719682347469) format('woff'),
+       url(images/0d8bdb1aa0d33716584c.ttf?t=1719682347469) format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-repeat:before {
+  content: "\e878";
+}
+
+.icon-repeat-once:before {
+  content: "\e879";
+}
+
+.icon-shuffle-variant:before {
+  content: "\e8a0";
+}
+
+.icon-plus:before {
+  content: "\e853";
+}
+
+.icon-music-circle:before {
+  content: "\e805";
+}
+
+.icon-playlist-plus:before {
+  content: "\e851";
+}
+
+.icon-delete:before {
+  content: "\e62a";
+}
+
+.icon-loading:before {
+  content: "\e7f1";
+}
+
+.icon-pause:before {
+  content: "\e7fe";
+}
+
+.icon-caret-right:before {
+  content: "\e8ec";
+}
+
+.icon-step-backward:before {
+  content: "\e8ef";
+}
+
+.icon-step-forward:before {
+  content: "\e8f0";
+}
+
+.icon-pause-circle-outline:before {
+  content: "\e837";
+}
+
+.icon-play-circle-outline:before {
+  content: "\e84f";
+}
+
+.icon-playlist-play:before {
+  content: "\e850";
+}
+
+.icon-skip-next-circle-outline:before {
+  content: "\e8ac";
+}
+
+.icon-skip-previous-circle-outline:before {
+  content: "\e8ad";
+}
+
+.icon-volume-high:before {
+  content: "\e925";
+}
+
+.icon-volume-off:before {
+  content: "\e926";
+}
+
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.91.0/node_modules/css-loader/dist/cjs.js!../../node_modules/.pnpm/less-loader@11.1.4_less@4.2.0_webpack@5.91.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/index.less ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.91.0/node_modules/css-loader/dist/cjs.js!../../node_modules/.pnpm/less-loader@11.1.4_less@4.2.0_webpack@5.91.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/view/app.less ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.app .main-component {
+  height: 100vh;
+}
+.app .hidden-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.app #p5-container {
+  width: 100%;
+  height: 100%;
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.91.0/node_modules/css-loader/dist/cjs.js!../../node_modules/.pnpm/less-loader@11.1.4_less@4.2.0_webpack@5.91.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/view/bottom_bar/index.less ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  background-color: #373737;
+  height: 52px;
+  color: white;
+  border-top: 2px solid #4c4c4c;
+}
+.bottom-bar .bottom-bar-content {
+  margin: auto;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.bottom-bar .bottom-bar-content .controller-content {
+  display: flex;
+  align-items: center;
+  width: 137px;
+}
+.bottom-bar .bottom-bar-content .controller-content button {
+  border-radius: 50%;
+  margin-right: 12px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+.bottom-bar .bottom-bar-content .controller-content button:hover {
+  color: white !important;
+  border-color: white !important;
+  box-shadow: 0 0 5px 0px white;
+}
+.bottom-bar .bottom-bar-content .controller-content .prev,
+.bottom-bar .bottom-bar-content .controller-content .next {
+  width: 24px;
+  height: 24px;
+  color: #c0c0c0;
+  border-width: 1px;
+}
+.bottom-bar .bottom-bar-content .controller-content .prev .iconfont,
+.bottom-bar .bottom-bar-content .controller-content .next .iconfont {
+  font-size: 14px;
+}
+.bottom-bar .bottom-bar-content .controller-content .play-pause {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+}
+.bottom-bar .bottom-bar-content .controller-content .play-pause .iconfont {
+  font-size: 22px;
+}
+.bottom-bar .bottom-bar-content .controller-content .play-pause .iconfont.play {
+  transform: translateX(1px);
+}
+.bottom-bar .bottom-bar-content .controller-content .play-pause .loading {
+  animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+  /* 从 0 度开始旋转，到 360 度结束，即一圈 */
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bottom-bar .bottom-bar-content .audio-pic {
+  width: 34px;
+  height: 34px;
+  margin-right: 15px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.bottom-bar .bottom-bar-content .audio-pic img {
+  width: 100%;
+  height: 100%;
+}
+.bottom-bar .bottom-bar-content .audio-pic .mask {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 34px;
+  height: 35px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent);
+  clip-path: polygon(0 0, 100% 0, 0 100%, 0 100%);
+}
+.bottom-bar .bottom-bar-content .main-content {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  height: 100%;
+}
+.bottom-bar .bottom-bar-content .main-content .audio-info {
+  display: flex;
+  height: 12px;
+  margin-top: 7px;
+  margin-bottom: 3px;
+  align-items: center;
+}
+.bottom-bar .bottom-bar-content .main-content .audio-info .audio-name {
+  max-width: 300px;
+  color: #e8e8e8;
+  font-size: 12px;
+}
+.bottom-bar .bottom-bar-content .main-content .audio-info .artist-name {
+  margin-left: 15px;
+  color: #9b9b9b;
+  font-size: 12px;
+}
+.bottom-bar .bottom-bar-content .extra-content {
+  margin-left: 32px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.bottom-bar .bottom-bar-content .extra-content .icon-button {
+  font-size: 22px;
+  background: linear-gradient(to bottom right, #adadad, #7a7a7a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-right: 6px;
+}
+.bottom-bar .bottom-bar-content .extra-content .icon-button:hover {
+  text-shadow: 0 0 2px white;
+  cursor: pointer;
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.91.0/node_modules/css-loader/dist/cjs.js!../../node_modules/.pnpm/less-loader@11.1.4_less@4.2.0_webpack@5.91.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/view/bottom_bar/components/progress_bar.less ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+.progress-bar {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.progress-bar .ant-slider-rail,
+.progress-bar .ant-slider-track {
+  height: 8px;
+}
+.progress-bar .time {
+  margin-left: 14px;
+  flex-shrink: 0;
+  color: #797979;
+}
+.progress-bar .time span {
+  color: #a1a1a1;
+}
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.91.0/node_modules/css-loader/dist/cjs.js!../../node_modules/.pnpm/less-loader@11.1.4_less@4.2.0_webpack@5.91.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/components/slider/index.less ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.my-slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.my-slider .ant-slider {
+  display: flex;
+  margin: 0;
+}
+.my-slider .ant-slider .ant-slider-rail,
+.my-slider .ant-slider .ant-slider-track {
+  border-radius: 10px;
+}
+.my-slider .ant-slider .ant-slider-rail {
+  background-color: #535353;
+}
+.my-slider .ant-slider .ant-slider-track {
+  background-color: #c70c0c;
+}
+.my-slider .ant-slider .ant-slider-handle {
+  inset-block-start: auto;
+  inset-inline-start: auto;
+  width: 16px;
+  height: 16px;
+}
+.my-slider .ant-slider .ant-slider-handle::before {
+  width: 6px;
+  height: 6px;
+  background-color: #c70c0c;
+  z-index: 1;
+  inset-inline-start: auto;
+  inset-block-start: auto;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+.my-slider .ant-slider .ant-slider-handle:hover::after,
+.my-slider .ant-slider .ant-slider-handle::after {
+  height: 16px;
+  width: 16px;
+  inset-inline-start: auto;
+  inset-block-start: auto;
+  box-shadow: 0px 0px 2px 1px #535353;
+}
+.my-slider .ant-slider .ant-slider-handle:hover::after {
+  box-shadow: 0px 0px 2px 1px #878787;
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.91.0/node_modules/css-loader/dist/cjs.js!../../node_modules/.pnpm/less-loader@11.1.4_less@4.2.0_webpack@5.91.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/view/bottom_bar/components/volume_controller.less ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+.volume-controller .ant-popover {
+  top: -113px !important;
+  left: -5px !important;
+  width: 32px;
+  height: 113px;
+}
+.volume-controller .ant-popover .ant-popover-content {
+  height: 100%;
+}
+.volume-controller .ant-popover .ant-popover-content .ant-popover-inner {
+  height: calc(100% - 32px);
+  padding: 16px 0;
+  border-radius: 0;
+}
+.volume-controller .ant-popover .ant-popover-content .ant-popover-inner .ant-popover-inner-content {
+  height: 100%;
+}
+.volume-controller .ant-popover .ant-popover-arrow {
+  visibility: hidden;
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.91.0/node_modules/css-loader/dist/cjs.js!../../node_modules/.pnpm/less-loader@11.1.4_less@4.2.0_webpack@5.91.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/view/bottom_bar/components/play_list.less ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.play-list .ant-popover {
+  border-radius: 6px;
+  width: 540px !important;
+  height: 300px !important;
+  position: fixed !important;
+  bottom: 54px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  overflow: hidden !important;
+}
+.play-list .ant-popover .ant-popover-inner {
+  padding: 0;
+}
+.play-list .play-list-list {
+  color: #e2e2e2;
+  background-color: #1e2125;
+}
+.play-list .play-list-list .iconfont {
+  color: #9b9b9b;
+}
+.play-list .play-list-list .iconfont:hover {
+  color: #e2e2e2;
+}
+.play-list .play-list-list .ant-list-header {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  height: 40px;
+  padding: 0 26px;
+  border-bottom: 1px solid black;
+}
+.play-list .play-list-list .ant-list-header .title {
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.play-list .play-list-list .ant-list-header .title .clear-button {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.play-list .play-list-list .ant-list-header .title .clear-button .text {
+  color: #ccc;
+  font-size: 12px;
+  margin-left: 6px;
+}
+.play-list .play-list-list .ant-list-header .title .clear-button:hover {
+  cursor: pointer;
+}
+.play-list .play-list-list .ant-list-header .title .clear-button:hover .iconfont {
+  color: #e2e2e2;
+}
+.play-list .play-list-list .ant-list-header .title .clear-button:hover .text {
+  color: #e2e2e2;
+  text-decoration: underline;
+}
+.play-list .play-list-list .ant-list-items {
+  font-size: 12px;
+  height: 260px;
+  overflow: auto;
+  /* 修改滚动条的轨道 */
+  /* 修改滚动条的轨道背景 */
+  /* 修改滚动条的滑块 */
+  /* 修改滚动条的滑块悬停状态样式 */
+  /* 修改滚动条的滑块在拖动时的样式 */
+  /* 修改滚动条的轨道两端的按钮样式 */
+  /* 修改滚动条的轨道两端的按钮在悬停状态的样式 */
+}
+.play-list .play-list-list .ant-list-items::-webkit-scrollbar {
+  width: 6px;
+  /* 设置滚动条的宽度 */
+}
+.play-list .play-list-list .ant-list-items::-webkit-scrollbar-track {
+  background: #000;
+}
+.play-list .play-list-list .ant-list-items::-webkit-scrollbar-thumb {
+  background: #868686;
+  border: 1px solid #a6a6a6;
+  border-radius: 4px;
+  /* 设置滑块圆角 */
+  opacity: 0.8;
+}
+.play-list .play-list-list .ant-list-items::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.play-list .play-list-list .ant-list-items::-webkit-scrollbar-thumb:active {
+  background: #7f7f7f;
+}
+.play-list .play-list-list .ant-list-items::-webkit-scrollbar-button {
+  display: none;
+  /* 隐藏滚动条两端的按钮 */
+}
+.play-list .play-list-list .ant-list-items::-webkit-scrollbar-button:hover {
+  display: block;
+  /* 设置悬停时显示 */
+}
+.play-list .play-list-list .list-item {
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.play-list .play-list-list .list-item .iconfont {
+  font-size: 17px;
+  visibility: hidden;
+}
+.play-list .play-list-list .list-item:hover {
+  background-color: #111316;
+}
+.play-list .play-list-list .list-item:hover .iconfont {
+  visibility: visible;
+}
+.play-list .play-list-list .list-item div {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 10px;
+  flex-shrink: 0;
+}
+.play-list .play-list-list .list-item div:nth-child(1) {
+  width: 20px;
+}
+.play-list .play-list-list .list-item div:nth-child(1) .iconfont {
+  font-size: 22px;
+  color: #b60a0a;
+  visibility: visible;
+}
+.play-list .play-list-list .list-item div:nth-child(2) {
+  flex: 1;
+}
+.play-list .play-list-list .list-item div:nth-child(3) {
+  width: 88px;
+}
+.play-list .play-list-list .list-item div:nth-child(4) {
+  width: 80px;
+}
+.play-list .play-list-list .list-item div:nth-child(5) {
+  width: 45px;
+}
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.91.0/node_modules/css-loader/dist/cjs.js!../../node_modules/.pnpm/less-loader@11.1.4_less@4.2.0_webpack@5.91.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/view/bottom_bar/components/play_list_adder.less ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+.play-list-adder-modal .ant-divider {
+  color: white;
+  font-weight: 700;
+}
+.play-list-adder-modal .upload-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+.play-list-adder-modal .upload-container h2 {
+  text-align: center;
+  margin: 0 0 30px;
+  color: white ;
+}
+.play-list-adder-modal .upload-container .ant-input-group-addon button {
+  color: white;
+  background-color: #5c6675;
+  border: 1px solid white;
+}
+.play-list-adder-modal .upload-container .ant-input-group-addon button:hover {
+  background-color: #5c6675;
+}
+.play-list-adder-modal .upload-container .ant-input-group-addon:hover {
+  box-shadow: 0 0 5px #ffffff;
+}
+.play-list-adder-modal .upload-container .ant-upload-wrapper {
+  height: 160px;
+}
+.play-list-adder-modal .upload-container .ant-upload-wrapper .iconfont {
+  color: white;
+  font-size: 48px;
+}
+.play-list-adder-modal .upload-container .ant-upload-wrapper p {
+  color: #cccccc;
+  font-size: 16px;
+}
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/css-loader@6.11.0_webpack@5.91.0/node_modules/css-loader/dist/cjs.js!../../node_modules/.pnpm/less-loader@11.1.4_less@4.2.0_webpack@5.91.0/node_modules/less-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/components/loading/index.less ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.loading {
+  display: flex;
+}
+.loading .ant-spin-fullscreen {
+  z-index: 9999;
+}
+.loading .ant-spin-fullscreen .ant-spin {
+  z-index: 9999;
+}
+.loading .loading-content {
+  width: 400px;
+}
+.loading .loading-content .loading-message {
+  margin: auto;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.loading .loading-content .ant-progress-text {
+  color: white;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
